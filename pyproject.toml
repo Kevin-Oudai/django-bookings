@@ -3,12 +3,12 @@ requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "django-bookings"
+name = "mroudai-django-bookings"
 version = "0.1.0"
 description = "Reusable Django app that stores and manages appointment bookings."
 readme = "README.md"
 requires-python = ">=3.10"
-authors = [{ name = "Open Source Contributors" }]
+authors = [{ name = "Kevin Oudai", email = "kevin@mroudai.com" }]
 license = { file = "LICENSE" }
 dependencies = ["Django>=4.2"]
 classifiers = [
@@ -30,7 +30,8 @@ classifiers = [
 keywords = ["django", "bookings", "appointments"]
 
 [project.urls]
-Homepage = "https://github.com/"
+Homepage = "https://github.com/Kevin-Oudai/django-bookings"
+Repository = "https://github.com/Kevin-Oudai/django-bookings.git"
 
 [tool.setuptools]
 packages = ["bookings"]

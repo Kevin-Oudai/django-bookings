@@ -1,4 +1,4 @@
-# django-bookings
+# mroudai-django-bookings
 
 `django-bookings` is a reusable Django app for creating and managing appointment bookings with a simple, opinionated lifecycle. It focuses on storing bookings safely and integrating with an external slots/availability engine.
 
@@ -83,5 +83,10 @@ The Django admin lists bookings with filters/search, includes inline add-ons/eve
 python test bookings
 ```
 The helper script defaults to `bookings.tests.settings`; pass additional labels/paths after `test` as needed.
+
+## Publishing
+Use the helper scripts to build and upload (expects PyPI credentials via `~/.pypirc` or `PYPI_USERNAME`/`PYPI_PASSWORD`):
+- Bash: `bash publish.sh`
+- Python: `python upload project`
 
 SQLite is used in tests; PostgreSQL is recommended in production (consider adding an exclusion constraint for overlaps there).
