@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+import os
+import sys
+
+import django
+from django.core.management import call_command
+
+
+def main() -> None:
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "bookings.tests.settings")
+    django.setup()
+    args = sys.argv[1:] or ["bookings"]
+    call_command("test", *args)
+
+
+if __name__ == "__main__":
+    main()

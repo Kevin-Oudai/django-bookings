@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-bookings"
+version = "0.1.0"
+description = "Reusable Django app that stores and manages appointment bookings."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Open Source Contributors" }]
+license = { file = "LICENSE" }
+dependencies = ["Django>=4.2"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Framework :: Django",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["django", "bookings", "appointments"]
+
+[project.urls]
+Homepage = "https://github.com/"
+
+[tool.setuptools]
+packages = ["bookings"]
+
+[tool.setuptools.package-data]
+"bookings" = ["migrations/*.py"]
